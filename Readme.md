@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
-* Студент: [Victoria](https://up.htmlacademy.ru/nodejs-api/7/user/1801301).
-* Наставник: `Неизвестно`.
+- Студент: [Racoon](https://up.htmlacademy.ru/nodejs-api/7/user/1801301).
+- Наставник: [Владислав Поклонский](https://htmlacademy.ru/profile/id2210683).
 
 ---
 
