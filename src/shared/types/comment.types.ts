@@ -6,7 +6,7 @@ export type Comment = {
   /** e,g, '2024-01-15T09:51:10.735Z',
    * not used when comment is being created
    */
-  publicationDate: string;
+  publicationDate: Date;
   /** from 1 to 5 (round) */
   rating: number;
   /** User entity */

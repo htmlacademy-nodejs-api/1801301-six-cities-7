@@ -9,7 +9,7 @@ export type Offer = {
   /** min 20 max 1024 */
   description: string;
   /** e,g, '2024-01-15T09:51:10.735Z' */
-  publicationDate: string;
+  publicationDate: Date;
   /** Paris | Cologne | Hamburg | Brussels |Amsterdam | Dusseldorf */
   city: City;
   /** path to the image preview */
@@ -18,7 +18,7 @@ export type Offer = {
   propertyImages: string[];
   /** flag whether it is premium or not */
   premium: boolean;
-  /** flag if it is in user's favorites */
+  /** flag whether it is in user's favorites */
   favorite: boolean;
   /** from 1 to 5, can be .1 to .9 */
   rating: number;
