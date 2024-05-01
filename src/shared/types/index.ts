@@ -5,3 +5,4 @@ export * from './comment.types.js';
 export * from './property-type.enum.js';
 export * from './user-type.enum.js';
 export * from './user.types.js';
+export * from './location.types.js';

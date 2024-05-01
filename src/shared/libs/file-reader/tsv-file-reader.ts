@@ -4,6 +4,7 @@ import { FileReader } from './file-reader.interface.js';
 import {
   AmenityType,
   City,
+  Location,
   Offer,
   PropertyType,
   User,
@@ -89,7 +90,7 @@ export class TSVFileReader implements FileReader {
     };
   }
 
-  private parseCoordinates(rentalCoordinates: string) {
+  private parseCoordinates(rentalCoordinates: string): Location {
     const [latitude, longitude] = rentalCoordinates.split(',');
     return {
       latitude: +latitude,

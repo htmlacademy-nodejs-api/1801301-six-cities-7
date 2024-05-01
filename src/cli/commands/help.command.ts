@@ -1,9 +1,10 @@
 import chalk from 'chalk';
 import { Command } from './command.interface.js';
+import { Commands } from './commands.enum.js';
 
 export class HelpCommand implements Command {
   public getName(): string {
-    return '--help';
+    return Commands.help;
   }
 
   public async execute(..._parameters: string[]): Promise<void> {

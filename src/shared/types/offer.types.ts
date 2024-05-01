@@ -1,5 +1,6 @@
 import { AmenityType } from './amenity-type.enum.js';
 import { City } from './cities.enum.js';
+import { Location } from './location.types.js';
 import { PropertyType } from './property-type.enum.js';
 import { User } from './user.types.js';
 
@@ -40,8 +41,5 @@ export type Offer = {
   /** computed on fly */
   numberOfComments: number;
   /** latitude/longitude */
-  rentalCoordinates: {
-    latitude: number;
-    longitude: number;
-  };
+  rentalCoordinates: Location;
 };
