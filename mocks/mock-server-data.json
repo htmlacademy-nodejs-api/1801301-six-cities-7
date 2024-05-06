@@ -1,0 +1,55 @@
+{
+    "api": {
+      "names": [
+        "Azure Oasis Resort",
+        "Sunset Serenity Hotel",
+        "Royal Mirage Palace",
+        "Emerald Cove Retreat",
+        "Golden Sands Inn"
+      ],
+      "descriptions": [
+        "Experience luxury and tranquility at our exclusive beachfront resort.",
+        "Enjoy breathtaking sunsets and unmatched hospitality at our seaside retreat.",
+        "Indulge in opulence and grandeur at our majestic palace hotel.",
+        "Escape to paradise and immerse yourself in the natural beauty of our coastal hideaway.",
+        "Discover comfort and elegance amidst the golden sands of our boutique inn."
+      ],
+      "cities": [
+        "Paris",
+        "Cologne",
+        "Brussels",
+        "Amsterdam",
+        "Hamburg",
+        "Dusseldorf"
+      ],
+      "urls": [
+        "https://picsum.photos/200/300?random=1",
+        "https://picsum.photos/200/300?random=2",
+        "https://picsum.photos/200/300?random=3",
+        "https://picsum.photos/200/300?random=4",
+        "https://picsum.photos/200/300?random=5"
+      ],
+      "types": [
+        "apartment",
+        "house",
+        "room",
+        "hotel"
+      ],
+      "facilities": [
+        "Breakfast",
+        "Air conditioning",
+        "Laptop friendly workspace",
+        "Baby seat",
+        "Washer",
+        "Towels",
+        "Fridge"
+      ],
+      "creators": [
+        "John Doe",
+        "Jane Doe",
+        "James F Kennedy",
+        "Teddy Roosevelt",
+        "Terry Barns"
+      ]
+    }
+  }
