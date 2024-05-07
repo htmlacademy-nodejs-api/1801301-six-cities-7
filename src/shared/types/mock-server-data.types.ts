@@ -5,7 +5,8 @@ export type MockServerData = {
   propertyImages: [];
   propertyTypes: [];
   amenities: [];
-  authors: [];
+  users: [];
   createdDates: [];
   ratings: [];
+  rentalCoordinates: [];
 };

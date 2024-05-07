@@ -24,6 +24,9 @@ const MIN_RATING = 1;
 const MAX_RATING = 5;
 const RATING_STEP = 1;
 
+const MIN_COMMENTS = 0;
+const MAX_COMMENTS = 100;
+
 export class TSVOfferGenerator implements OfferGenerator {
   constructor(private readonly mockData: MockServerData) {}
 
@@ -31,34 +34,45 @@ export class TSVOfferGenerator implements OfferGenerator {
     const amenities = getRandomItems<string>(this.mockData.amenities).join(';');
     const title = getRandomItem<string>(this.mockData.titles);
     const description = getRandomItem<string>(this.mockData.descriptions);
-    const photo = getRandomItem<string>(this.mockData.propertyImages);
+    const city = getRandomItem<string>(this.mockData.cities);
+    const propertyImages = getRandomItems<string>(
+      this.mockData.propertyImages
+    ).join(';');
+    const previewImagePath = getRandomItem<string>(
+      this.mockData.propertyImages
+    );
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
-    const author = getRandomItem<string>(this.mockData.authors);
-    const avatar = getRandomItem<string>(this.mockData.propertyImages);
+    const user = getRandomItem<string>(this.mockData.users);
     const createdDate = dayjs()
       .subtract(generateRandomValue(FIRST_WEEK_DAY, LAST_WEEK_DAY), 'day')
       .toISOString();
-
+    const propertyType = getRandomItem<string>(this.mockData.propertyTypes);
     const numberOfGuests = generateRandomValue(MIN_GUESTS, MAX_GUESTS);
     const numberOfRooms = generateRandomValue(MIN_ROOMS, MAX_ROOMS);
-
+    const numberOfComments = generateRandomValue(MIN_COMMENTS, MAX_COMMENTS);
     const rating = generateRandomValue(MIN_RATING, MAX_RATING, RATING_STEP);
-
-    const [firstName, lastName] = author.split(' ');
+    const rentalCoordinates = getRandomItem<string>(
+      this.mockData.rentalCoordinates
+    );
 
     return [
       title,
       description,
       createdDate,
-      photo,
-      amenities,
-      price,
-      numberOfGuests,
+      city,
+      previewImagePath,
+      propertyImages,
+      true,
+      true,
       rating,
-      avatar,
-      firstName,
-      lastName,
+      propertyType,
       numberOfRooms,
+      numberOfGuests,
+      price,
+      amenities,
+      user,
+      numberOfComments,
+      rentalCoordinates,
     ].join('\t');
   }
 }

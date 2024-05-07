@@ -44,12 +44,19 @@
         "Towels",
         "Fridge"
       ],
-      "authors": [
-        "John Doe",
-        "Jane Doe",
-        "James F Kennedy",
-        "Teddy Roosevelt",
-        "Terry Barns"
+      "users": [
+        "John Doe, gfdgfdg@gmail.com,******,https://robohash.org/Terry.png?set=set4.jpg,Pro",
+        "Jane Doe, 222@gmail.com,******,https://robohash.org/Terry.png?set=set4.jpg,Pro",
+        "James F Kennedy, 34@gmail.com,******,https://robohash.org/Terry.png?set=set4.jpg,Pro",
+        "Teddy Roosevelt, 234@gmail.com,******,https://robohash.org/Terry.png?set=set4.jpg,Pro",
+        "Terry Barns, 2gfddfgfd@gmail.com,******,https://robohash.org/Terry.png?set=set4.jpg,Pro"
+      ],
+      "rentalCoordinates": [
+        "52.335216, 4.565168",
+        "52.377216, 4.895678",
+        "52.560216, 4.895168",
+        "52.399916, 4.856168",
+        "52.987656, 4.866668"
       ]
     }
   }
