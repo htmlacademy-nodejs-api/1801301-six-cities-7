@@ -7,3 +7,4 @@ export { UserType } from './user-type.enum.js';
 export { User } from './user.types.js';
 export { Location } from './location.types.js';
 export { MockServerData } from './mock-server-data.types.js';
+export { Events } from './events.enum.js';
