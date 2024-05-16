@@ -9,3 +9,4 @@ export { Location } from './location.types.js';
 export { MockServerData } from './mock-server-data.types.js';
 export { Events } from './events.enum.js';
 export { Streams } from './streams.enum.js';
+export { Component } from './component.enum.js';

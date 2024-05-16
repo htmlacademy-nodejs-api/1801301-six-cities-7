@@ -3,11 +3,14 @@ import { Logger } from '../logger/index.js';
 import { configRestSchema } from './schema.js';
 import { RestSchema } from './index.js';
 import { config } from 'dotenv';
+import { inject, injectable } from 'inversify';
+import { Component } from '../../types/component.enum.js';
 
+@injectable()
 export class Config implements IConfig<RestSchema> {
   private readonly config: RestSchema;
 
-  constructor(private readonly logger: Logger) {
+  constructor(@inject(Component.Logger) private readonly logger: Logger) {
     const parsedOutput = config();
     if (parsedOutput.error) {
       throw new Error(
